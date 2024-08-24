@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJUDE HANA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .titulo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(214, 87, 108);
+            color: white;
+            padding: 1rem;
+
+            text-align: center;
+        }
+
+        .foto {
+            width: 100%;
+            max-width: 30rem;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .centro {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: rgb(228, 120, 138);
+            color: white;
+            padding: 1rem;
+        }
+
+        .esquerdo,
+        .direito {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .esquerdo {
+            margin-right: 1rem;
+        }
+
+        .direito {
+            margin-left: 1rem;
+            text-align: center;
+        }
+
+        .meio {
+            flex: 2;
+            padding: 0 1rem;
+            max-width: 600px;
+        }
+
+        .h1 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .p {
+            text-align: justify;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .whats {
+            width: 100%;
+            max-width: 30rem;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .redes {
+            display: flex;
+            justify-content: center;
+            padding: 2rem 0;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 1000px) {
+            .centro {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .esquerdo,
+            .direito {
+                margin: 0;
+                width: 100%;
+            }
+
+            .meio {
+                padding: 0;
+                width: 100%;
+                order: 2; /* Faz o conteúdo principal (textos) aparecer primeiro */
+            }
+
+            .esquerdo {
+                order: 1; /* Faz as imagens aparecerem depois dos textos */
+                margin-bottom: 1rem; /* Adiciona espaço abaixo das imagens */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .direito {
+                order: 3; /* Faz as redes sociais aparecerem por último */
+                margin-top: 1rem; /* Adiciona espaço acima das redes sociais */
+            }
+
+            .whats {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>AJUDE MINHA GATINHA HANA</h1>
+    </div>
+
+    <div class="centro">
+        <div class="esquerdo">
+            <img class="foto" src="img/1.png" alt="">
+            <img class="foto" src="img/2.png" alt="">
+            <img class="foto" src="img/3.png" alt="">
+            <img class="foto" src="img/4.png" alt="">
+        </div>
+
+        <div class="meio">
+            <h1 class="h1">Sobre a vaquinha</h1>
+
+            <p class="p">
+                Estou passando por um momento muito difícil e preciso da sua ajuda. Minha gatinha Hana, que é uma parte
+                muito especial da minha vida, está com um problema sério de saúde. Ela foi diagnosticada com pedras nos
+                rins e precisa de uma cirurgia urgente, mas o custo é acima do que eu posso arcar no momento.
+
+                Estou fazendo um apelo para quem puder ajudar com qualquer valor, por menor que seja. Cada contribuição
+                fará uma enorme diferença na recuperação da Hana.
+
+                Você pode fazer sua doação através do Pix, utilizando o e-mail na direita, ou pelo QR code na esquerda.
+
+                Muito obrigado pelo seu apoio e solidariedade.
+            </p>
+
+            <h1 class="h1">Sobre Hana</h1>
+
+            <p class="p">
+                Hana é minha primeira gatinha, e a gente tem uma ligação muito forte. Desde os meus 14 anos, ela tem
+                sido
+                minha companheira fiel. Ela é uma Siamês, e agora, com 7 anos, sempre foi tão cheia de vida. Mas
+                recentemente, meu coração ficou apertado ao vê-la tão mal, urinando com sangue, sem comer, sem beber
+                água, e triste... Chorava e se escondia, como se quisesse fugir da dor. Quando descobri que ela estava
+                com pedras nos rins, foi como se o mundo desabasse. Ela é parte de mim, e ver ela assim é devastador.
+            </p>
+
+            <p class="p">
+                Eu procurei diversos médicos veterinários para tentar salvar a Hana, mas a situação dela é tão
+                delicada... Ela é tão pequena, e muitos não quiseram fazer a cirurgia por conta dos riscos altos.
+                Finalmente, encontrei um que se dispôs a fazer, mas o custo é mais de <span>R$1.800,00</span>. Quando
+                soube disso, fiquei extremamente preocupada, porque eu simplesmente não tenho esse dinheiro. E cada dia
+                que passa, a situação dela só piora... Estou apavorada, com medo do que pode acontecer. Ver ela sofrendo
+                assim e não poder fazer nada é desesperador.
+            </p>
+
+            <div class="redes">
+                <a target="_blank"
+                    href="https://wa.me/5581984174521?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20Hana!"><img
+                        class="whats" src="img/5.png" alt=""></a>
+
+                <a target="_blank" href="mailto:pixpara.hana@gmail.com">
+                    <img class="whats" src="img/6.png" alt="Email Hana">
+                </a>
+            </div>
+
+        </div>
+
+        <div class="direito">
+            <img class="foto" src="img/pixqr.png" alt="">
+            <img class="foto" src="img/pixqr.png" alt="">
+            <img class="foto" src="img/pixqr.png" alt="">
+            <img class="foto" src="img/pixqr.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
